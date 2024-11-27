@@ -1,0 +1,65 @@
+.chest{
+background:url(../images/slider2.jpg);
+background-size:cover;
+height:953px ;
+background-repeat: no-repeat;
+
+}
+
+.chest_form{
+    padding:205px;
+    text-align:center ;
+    
+}
+.chest_heading{
+color: rgb(7, 34, 39);
+padding-bottom:30px;
+box-shadow: 10px 10px 10px #2c7289
+} 
+ form label {
+    width: 70%;
+    display: block;
+    margin-bottom:26px;
+    margin-left:169px ;
+    padding: 15px 10px;
+    font-size:25px;
+    color: rgb(7, 34, 39);
+    box-shadow: 10px 10px 10px #2c7289;
+    font-weight: bold;
+}
+form  input {
+    display: block;
+    margin-bottom: 17px;
+    margin-left:389px ;
+    padding: 15px 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background:#2c7289;
+}
+form>input[type="submit"]{
+    margin-bottom: 17px;
+    margin-left:491px ;
+    /*****/
+    font-weight: bold;
+    font-size: 17px;
+    background:#2c7289;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px #a2b3b8;
+}
+form>input[type="file"]{
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px #a2b3b8;
+}
+ form>input[type="submit"]:hover {
+    background: rgb(73, 155, 199);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Cancer Prediction Using Machine Learning</title> 
+ 
+    <!-- Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Arimo&family=Hind:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+ 
+    <style> 
+        /* Background with blur */ 
+        .bg-img { 
+            background-image: url('../Images/Houston-Medical-Imaging.png'); 
+            filter: blur(10px); 
+            height: 100vh; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            position: absolute; 
+            width: 100%; 
+            z-index: -1; 
+        } 
+ 
+        /* Main content container */ 
+        .content { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            z-index: 1; 
+            position: relative; 
+        } 
+ 
+        .form-container { 
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 40px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+            max-width: 500px; 
+            width: 100%; 
+            text-align: center; 
+        } 
+ 
+        h1 { 
+            font-family: 'Pacifico', cursive; 
+            font-size: 2.5rem; 
+            color: #0a3d62; 
+            margin-bottom: 30px; 
+        } 
+ 
+        form input[type="text"] { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            font-family: 'Arimo', sans-serif; 
+            font-size: 1rem; 
+        } 
+ 
+        form button { 
+            background-color: #0a3d62; 
+            color: white; 
+            border: none; 
+            padding: 15px; 
+            border-radius: 5px; 
+            font-family: 'Arimo', sans-serif; 
+            font-size: 1.2rem; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-top: 20px; 
+        } 
+ 
+        form button:hover { 
+            background-color: #074a74; 
+        } 
+ 
+        @media (max-width: 600px) { 
+            .form-container { 
+                padding: 20px; 
+            } 
+ 
+            h1 { 
+                font-size: 2rem; 
+            } 
+        } 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <!-- Blurred Background Image --> 
+    <div class="bg-img"></div> 
+ 
+    <!-- Main Content --> 
+    <div class="content"> 
+        <div class="form-container"> 
+            <h1>Cancer Prediction Using Machine Learning</h1> 
+            <form action="http://127.0.0.1:8000/predict" method="post"> 
+                <input type="text" name="Age" placeholder="Enter Your Age" required="required"> 
+                <input type="text" name="Gender" placeholder="Enter Your Gender" required="required"> 
+                <input type="text" name="BMI" placeholder="Enter your BMI" required="required"> 
+                <input type="text" name="Smoking" placeholder="If you smoke, enter 1. Otherwise, enter 0." required="required"> 
+                <input type="text" name="GeneticRisk" placeholder="Do you have a genetic risk? 0 or 1" required="required"> 
+                <input type="text" name="PhysicalActivity" placeholder="Physical activity level: 0, 1, or 2" required="required"> 
+                <input type="text" name="AlcoholIntake" placeholder="Percentage of alcohol consumption" required="required"> 
+                <input type="text" name="CancerHistory" placeholder="History of cancer: 0 or 1" required="required"> 
+                <button type="submit">Predict</button> 
+            </form> 
+        </div> 
+    </div> 
+ 
+</body> 
+</html>

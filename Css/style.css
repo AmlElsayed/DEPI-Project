@@ -1,0 +1,234 @@
+:root
+{
+    --mainColor:#0b6479;
+}
+.container
+{
+    padding:0 15px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin:  auto;
+}
+div.head
+{
+    /* color: #0B6479; */
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 120px;
+}
+div .head i{
+    color: #0B6479; 
+    margin-right: 50px; 
+}
+div span{
+     color: #0b6479; 
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/**************************************************************************** */
+/**************************************************************************** */
+/**************************************************************************** */
+div .home
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px 60px;
+    
+}
+.home>div
+{
+    /* background-color: yellow; */
+    border: 3px solid #0B6479;
+    border-radius:20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+div .home .link
+{
+    color: var(--mainColor);
+    font-family:serif;
+    text-decoration: none;
+    
+}
+div .home .icons
+{
+    margin-right: 20px;
+    color: var(--mainColor);
+    text-align: center;    
+}
+div .home div .icons
+{
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+/* .home > div:hover
+{
+    filter: grayscale();
+} */
+/*End General Page****/
+
+
+/* ------------------------------------ */
+/*Start Website */
+/* ------------------------------------------- */
+
+/*-------- Start Our Neurologist -------*/
+
+/* .neuro .upper h1
+{
+    color: #0B6479;
+    text-transform: capitalize;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.neuro .upper hr
+{
+    color: #0B6479;
+    width: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.neuro .upper p
+{
+    margin:5px 150px 40px 150px;
+    text-align: center;
+}
+.neuro .lower
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.neuro .lower .carousel-indicators
+{
+    margin: -20px;
+}
+.neuro .lower .slid_img h1
+{
+    color: #0B6479;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.neuro .lower .slid_img h4
+{
+    text-align: center;
+    font-size: 17px;
+}
+.neuro .lower .slid_img .modify_img img
+{
+    transition: transform .5s ease;
+}
+.neuro .lower .slid_img .modify_img
+{
+border-radius: 20px;
+height: 300px; 
+overflow: hidden; 
+}
+.neuro .lower .slid_img .modify_img:hover img
+{
+    transform: scale(1.2);
+} */
+
+/*------- End Our Neurologist -------------*/
+
+/*--------Start News And Cases ----------*/
+/* ------------------------------------ */
+
+.news .container .heading h1
+{
+    color: #0B6479;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.news .container .heading hr
+{
+    display: block;
+    height: 2px;
+    width: 80px;
+    border: 0;
+    border-top: 2px solid #0B6479;
+}
+.news .container .heading p
+{
+    padding-bottom:30px;
+    margin-right: 400px;
+}
+/* /////////////////////////// */
+
+.news .container .case_img 
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+.news .container .case_img .image
+{
+    width: 350px;
+    height: 240px;
+}
+.news .container .case_img h1
+{
+    color: var(--mainColor);
+    font-weight: 700;
+    font-size: 20px;
+}
+.news .container .case_img .edit
+{
+    font-weight: lighter;
+}
+.news .container .case_img p:nth-last-child()
+{
+    font-size: 14px;
+    margin-right: 55px;
+}
+/**--------------End News And Cases----------------------------**/
+/**------------------------------------------------------------**/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Quaries */
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+    .container
+    {
+        width: 750px;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container
+    {
+        width: 970px;
+    }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container
+    {
+        width: 1170px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+} 
